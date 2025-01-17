@@ -1,15 +1,13 @@
 'use client'
-import { act, FC, useEffect, useState } from 'react'
+import { FC,  useState } from 'react'
 import { YandexMap } from './YandexMap'
-import { WorkingHours } from './WorkingHours'
-import { MediumTitle } from './MediumTitle'
 import { Container } from './Container'
 import { filials } from '@/datas/filials'
 interface Props {
     className?: string
 }
 
-export const About: FC<Props> = ({ className }) => {
+export const About: FC<Props> = ({  }) => {
 
     const [active, setActive] = useState(0)
     const data = filials.filter(item => item.id === active)
@@ -19,7 +17,7 @@ export const About: FC<Props> = ({ className }) => {
     }
 
     return (
-        <div id='about' className='py-10 mb-10  bg-[#000080]'>
+        <div id='about' className={'py-10 mb-10  bg-[#000080]'}>
             <Container>
                 <h1 className='text-[36px] font-extrabold text mb-10 text-white border-b'>ОТДЕЛЕНИЕ</h1>
                 <div className='flex items-center gap-2 justify-evenly'>

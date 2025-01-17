@@ -25,9 +25,9 @@ export const Footer: FC<Props> = ({ className }) => {
                                     { title: 'Телефон номер', values: ['+998 (90) 700-31-08', '+998 (99) 953-73-66'] },
                                     { title: 'Gmail', values: ['islambekbaevich@gmail.com'] },
                                 ].map(item => (
-                                    <div className='flex justify-between w-full'>
+                                    <div key={item.title} className='flex justify-between w-full'>
                                         <p className='font-bold'>{item.title}: </p>
-                                        <p className='flex gap-10'>{item.values.map(item => (<span>{item}</span>))}</p>
+                                        <p className='flex gap-10'>{item.values.map(item => (<span key={item}>{item}</span>))}</p>
                                     </div>
 
                                 ))}

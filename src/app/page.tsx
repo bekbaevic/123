@@ -1,4 +1,4 @@
-import { About, Container } from "@/components/shared";
+import { About } from "@/components/shared";
 import { Banner } from "@/components/shared/Banner";
 import { Categories } from "@/components/shared/Categories";
 import { News } from "@/components/shared/News";

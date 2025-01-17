@@ -1,6 +1,5 @@
 import { FC } from 'react'
 import { Container } from './Container'
-import Image from 'next/image'
 import { projectsData } from '@/datas/projects'
 interface Props {
     className?: string
